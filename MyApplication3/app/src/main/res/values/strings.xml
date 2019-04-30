@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cadastro</string>
+    <string name="title_activity_2">Salvar</string>
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="aluno">Aluno: Bruno Paulucci de Carvalho</string>
+    <string name="ra">RA: 194458</string>
+    <string name="aluno2">Aluno: Hedon Stralhoti</string>
+    <string name="ra2">RA: 194314</string>
+    <string name="salvar">Os dados estão corretos?</string>
+    <string name="Nome">Nome:</string>
+    <string name="Idade">Idade:</string>
+    <string name="Endereco">Endereço:</string>
+    <string name="Materia">Programação para Dispositivos Móveis</string>
+    <string name="Unipar">Unipar - SI 2019</string>
+
+</resources>

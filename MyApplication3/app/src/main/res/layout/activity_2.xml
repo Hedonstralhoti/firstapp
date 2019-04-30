@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/sim"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTintMode="src_in"
+                android:text="Sim"
+                app:layout_anchor="@+id/include"
+                android:onClick="correto"/>
+
+            <Button
+                android:id="@+id/nao"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTintMode="src_in"
+                android:text="Não"
+                app:layout_anchor="@+id/include"
+                android:onClick="incorreto"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
